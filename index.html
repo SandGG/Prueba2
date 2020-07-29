@@ -2,17 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <!--<link href="estilo.css" rel="stylesheet" type="text/css">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi pagina</title>
 </head>
 <body>
-    <p>Hola mundo</p>
-    <ul>
-        <li type="circle">Tipo circulo.</li>      
-        <li type="square">Tipo cuadrado.</li>             
-    </ul>
-    <button class="button button1">Verdesuki</button>
-    <p>Caes mal hijo</p>
+    <header>
+        <p><b>Encabezado</b></p>
+        <img src="img/logo.png">
+        <form action="index.html" method="get">
+            <label form="buscar">Buscar:</label>
+            <input name="buscar" type="text"> 
+            <input type="submit" value="Enviar">
+        </form>
+        <nav>
+            <p><b>Navegación</b></p>
+            <ul>
+                <li><a href="index.html">Link 1</a></li>
+                <li><a href="index.html">Link 2</a></li>
+                <li><a href="index.html">Link 3</a></li>
+                <ul>
+                    <li><a href="index.html">Link 4</a></li>
+                    <li><a href="index.html">Link 5</a></li>                  
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <p><b>Define una sección</b></p>
+        <article>
+            <p>Mucho texto</p>
+        </article>
+        <article>
+            <p>Mucho texto</p>
+        </article>
+    </section>
+    <aside>
+        <p><b>Contenido no necesario</b></p>
+        <p>Más texto</p>
+    </aside>
+    <footer>
+        <p><b>Pie de pagína</b></p>
+        <ul>
+            <li><a href="index.html">Link 1</a></li>
+            <li><a href="index.html">Link 2</a></li>
+            <li><a href="index.html">Link 3</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
