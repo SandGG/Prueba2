@@ -18,7 +18,6 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;   
     text-align: center;
 }
 
@@ -57,45 +56,19 @@
 }
 
 .contenedor{
-    display: flex;
+    display:flex;
+    flex-direction: row;
     width: 40%;
     height: 400px;
     margin:auto;
-    background-color: pink;
-    margin-bottom: 5px;
 }
 
 .contenedor__izq{
-    justify-content: flex-start;
-    background-color: rgb(46, 139, 192);
-    width: 10%;
-}
-
-.contenedor__cent{
-    align-items: center;
-    width: 80%;
-}
-
-.contenedor__cent--top{
-    align-items: flex-start;
-    height: 10%;
-    background-color: aqua;
-}
-
-.contenedor__cent--mid{
-    align-items: flex-center;
-    height: 80%;
-    background-color:aquamarine;
-}
-
-.contenedor__cent--bot{
-    align-items: flex-bot;
-    height: 10%;
-    background-color:darkcyan;
+    width: 40%;
+    background-color: darkcyan;
 }
 
 .contenedor__der{
-    justify-content: flex-end;
-    background-color: blue;
-    width: 10%;
+    width: 60%;
+    background-color: red;
 }
