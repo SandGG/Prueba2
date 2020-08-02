@@ -1,0 +1,101 @@
+.header {
+    outline: 2px solid black;
+}
+
+.nav {
+    outline: 5px solid red;
+}
+
+.p {
+    font-family: Arial;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.nav__list {
+    outline: 8px solid yellow;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+    text-align: center;
+}
+
+.nav__item {
+    outline: 3px solid blue;
+    flex-basis: 20%; 
+}
+
+.nav__link {
+    background-color: violet;
+    display: block;
+}
+
+.form {
+    outline: 3px solid green;
+    text-align: right;
+    display: flex;
+}
+
+.form__label {
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.form__input {
+    background-color: lightblue;
+    font-family: Arial;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form__input--boton {
+    background-color: grey;
+    border-radius: 4px;
+    color:white
+}
+
+.contenedor{
+    display: flex;
+    width: 40%;
+    height: 400px;
+    margin:auto;
+    background-color: pink;
+    margin-bottom: 5px;
+}
+
+.contenedor__izq{
+    justify-content: flex-start;
+    background-color: rgb(46, 139, 192);
+    width: 10%;
+}
+
+.contenedor__cent{
+    align-items: center;
+    width: 80%;
+}
+
+.contenedor__cent--top{
+    align-items: flex-start;
+    height: 10%;
+    background-color: aqua;
+}
+
+.contenedor__cent--mid{
+    align-items: flex-center;
+    height: 80%;
+    background-color:aquamarine;
+}
+
+.contenedor__cent--bot{
+    align-items: flex-bot;
+    height: 10%;
+    background-color:darkcyan;
+}
+
+.contenedor__der{
+    justify-content: flex-end;
+    background-color: blue;
+    width: 10%;
+}
