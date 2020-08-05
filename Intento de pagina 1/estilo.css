@@ -2,6 +2,7 @@
     margin: 0px;
     background-color: rgb(245 245 245);
 }
+
 .header{
     background-color: rgb(89, 26, 101); 
     display: flex;
@@ -20,7 +21,8 @@
     align-items: center;
     color: rgb(41, 178, 219);
     text-decoration: none;
-    
+    flex-direction: column;
+    margin:25px;
 }
 
 .header__log{
@@ -39,6 +41,13 @@
     align-items: center;  
     background-color: rgb(255, 177, 0);
     text-decoration: none;
+    border-radius: 10rem;
+    padding: 1px 0.75rem 0px;
+    margin-left: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;  
+    height: 30px;
+    margin-top: 5%;
 }
 
 .galery{
@@ -89,6 +98,7 @@
 
 .footer__img--app{
     width: 15%;
+    padding-right: 0%;
 }
 
 .footer__text--sup{
@@ -96,8 +106,6 @@
     font-family: Helvetica;
     color:white;
 }
-
-
 
 .footer__inf{ 
     background: rgb(30, 15, 41);
