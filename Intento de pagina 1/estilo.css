@@ -6,7 +6,7 @@
 .nav{
     background-color: rgb(89, 26, 101); 
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     font-family: Helvetica;
     font-size: 14px;
     width: 100%;
@@ -17,7 +17,7 @@
 }
 
 .nav__logo{
-   
+    margin-left: 50%;
 }
 
 .nav__how{
