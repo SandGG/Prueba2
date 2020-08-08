@@ -5,77 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
     <link href="estilo.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body class="body">
-    <nav class="nav">
-        <div>
-           <a href="#" class="nav__logo"><img  src="../img/logo-pag.png"/></a> 
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="nav__logo"><img  src="../img/logo-pag.png"/></a> 
+            <nav class="nav">
+                <a class="nav__how" href="#"><b> HOW TO PLAY? &rarr;</b></a>
+                <a class="nav__log" href="#"><b> LOG IN </b></a>          
+                <a class="nav__bott" href="#"><b> SIGN UP </b></a>          
+            </nav> 
+        </div>              
+    </header>
+    <main>
+        <div class="galery">
+            <a href="#"><img class="galery__item" src="../img/img1.png"/></a>
+            <!--<a href="#"><img class="galery__item" src="../img/img2.png"/></a>-->
         </div>
-        <div class="nav__izq">
-            <a class="nav__how" href="#"><b> HOW TO PLAY? </b></a>
-            <a class="nav__log" href="#"><b> LOG IN </b></a>  
-            <a class="nav__bott" href="#"><b> SIGN UP </b></a> 
-        </div>               
-    </nav>
+        <section class="section">
+            <nav class="navegacion">
+                <a class="nav_item" href="#"><b> All&nbsp;Cranes </b></a>
+                <a class="nav_item" href="#"><b> Figures </b></a>
+                <a class="nav_item" href="#"><b> Plushies </b></a>
+                <a class="nav_item" href="#"><b> Key&nbsp;Chain </b></a>
+                <a class="nav_item" href="#"><b> Stationery </b></a>
+                <a class="nav_item" href="#"><b> My&nbsp;Melody:&nbsp;XL&nbsp;Romantic&nbsp;Heart&nbsp;Plushie </b></a>
+                <a class="nav_item" href="#"><b> Home&nbsp;Decoration </b></a>
+                <a class="nav_item" href="#"><b> Home&nbsp;Appliance </b></a>
+                <a class="nav_item" href="#"><b> Miscellaneous&nbsp;Goods </b></a>
+                <a class="nav_item" href="#"><b> Kitchen&nbsp;Tools </b></a>
+            </nav>
+        </section>
 
+        <section>
+            Contenido<br>
+            Contenido
+        </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="galery">
-        <a href="#"><img class="galery__item" src="../img/img1.png"/></a>
-        <!--<a href="#"><img class="galery__item" src="../img/img2.png"/></a>-->
-    </div>
-    <div class="menu">
-        <a class="menu__item" href="#"><b> All Cranes </b></a>
-        <a class="menu__item" href="#"><b> Figures </b></a>
-        <a class="menu__item" href="#"><b> Plushies </b></a>
-        <a class="menu__item" href="#"><b> Key Chain </b></a>
-        <a class="menu__item" href="#"><b> Stationery </b></a>
-        <a class="menu__item" href="#"><b> My Melody: XL Romantic Heart Plushie </b></a>
-        <a class="menu__item" href="#"><b> Home Decoration </b></a>
-        <a class="menu__item" href="#"><b> Home Appliance </b></a>
-        <a class="menu__item" href="#"><b> Miscellaneous Goods </b></a>
-        <a class="menu__item" href="#"><b> Kitchen Tools </b></a>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <section>
-        Contenido<br>
-        Contenido
-    </section>
+    </main>
     <footer class="footer">
         <div class="footer__sup">
-            <img class="footer__img" src="../img/pie.png"/>
-            <p class="footer__text--sup">Win. Anytime. Anywhere.</p>
-            <a href="#" class="footer__img--app"><img  src="../img/app.png"/></a>
+            <section>
+                <img src="../img/pie.png"/>
+                <p><b> Win. Anytime. Anywhere. </b></p>
+                <a href="#"><img  src="../img/app.png"/></a>
+            </section>
+            <section class="footer__sup--a">
+                <a href="#"> About </a>
+                <a href="#"> How it Works </a>
+                <a href="#"> Crane List </a>
+                <a href="#"> FAQ </a>
+                <a href="#"> User Guide </a>
+                <a href="#"> Contact Us </a>
+            </section>
+            <selection class="footer__sup--form">
+                <p><b> Stay Connected! </b></p>
+                <form action="#" method="get">
+                    <input class="input" placeholder="Email Addres" name="buscar" type="search" 
+                    ><input class="boton"  type="submit" value="&rarr;">
+                </form>
+                <a href="#"><i class="fab fa-instagram fa-2x" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-facebook-square fa-2x" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x" style="color: white;"></i></a>
+            </selection>
         </div>
         <div class="footer__inf">
-            <p class="footer__text"> Copyright © 2020 TOKYOCATCH™. All Rights Reserved. </p>
             <a class="footer__polic" href="#"> Terms of Use </a>
             <a class="footer__polic" href="#"> Privacy Policy </a>
             <a class="footer__polic" href="#"> Patch Notes </a>
             <p class="footer__text"> API version: 7c859f66 </p>
-        </div>
+            <p class="footer__text"> Copyright © 2020 TOKYOCATCH™. All Rights Reserved. </p>                 
+        </div>  
     </footer>
 </body>
 </html> 
