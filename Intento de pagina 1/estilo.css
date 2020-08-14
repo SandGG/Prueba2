@@ -1,25 +1,3 @@
-/*
-.footer__inf{ 
-    background: rgb(30, 15, 41);
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.footer__text{
-    color: rgb(166, 155, 172);
-}
-
-.footer__polic{
-    text-decoration: none;
-    color: rgb(166, 155, 172);
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-}*/
-
-
 .body{
     margin: 0px;
     background-color: rgb(245 245 245);
@@ -38,12 +16,13 @@
 }
 
 .nav__how{
-    position:fixed;
+    position: fixed;
     bottom: 0px;
     left: 0;
     background: rgb(127, 79, 217);
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .nav__log{
@@ -58,7 +37,7 @@
 }
 
 .nav a{
-    color:white; 
+    color: white; 
     text-decoration: none;
     padding: 15px;
     display: flex;
@@ -69,6 +48,7 @@
 .nav { 
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 /*.galery{
@@ -84,17 +64,95 @@
     background-color:white;
     font-family: Helvetica;
     font-size: 16px; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navegacion{
     display: flex;
     overflow-x:auto;
+
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .navegacion a{
     text-decoration: none;
     color:rgb(201, 197, 197);
-    padding: 20px;
+    padding: 16px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 10px auto;
+
+}
+
+.busqueda{
+    position: relative;
+    width: 600px;
+}
+
+.busqueda input{ 
+    font-weight: 400;
+    color: rgb(57, 57, 57);
+    border-style: none;
+    height: 40px;
+    font-family: Helvetica;
+    width: 100%;
+    padding: 10px;
+}
+
+.icono{
+    position: absolute;  
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenido{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido__articulos{
+    position: relative;
+    background: white;
+    width: 250px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.contenido__articulos img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.contenido__articulos a{
+    text-decoration: none;
+}
+
+.precio{
+    position: absolute;
+    background: white;
+    right: 10px;
+    top: 10px;
+    height: 25px;
+    width: 70px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion {
+    padding: 8px;
+}
+
+.descripcion p{
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 .footer{
@@ -115,17 +173,19 @@
 
 .footer__sup--a{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100px;
-    padding: 5px 0;
+    padding: 32px 16px;
+    align-items: center;
 }
 
 .footer__sup--a a{
     color: white;
     text-decoration: none;
-    padding: 5px;
-    width:auto;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.footer__sup--a div{
+    padding-right: 64px;
 }
 
 .input{
@@ -148,28 +208,29 @@
 
 .footer__inf{
     background: rgb(30, 15, 41);
-    padding-bottom: 40px;
     color: rgb(166, 155, 172);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px 50px 16px;
 }
 
 .footer__inf a{
     color: rgb(166, 155, 172);
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+    margin-bottom: 16px;
 }
 
 .footer__inf p{
-    padding: 10px;
+    margin-bottom: 16px;
     margin: 0;
 }
 
-@media screen and (min-width:600px){
-    .body{
-        background-color:salmon;
-    }
+.footer__inf span{
+    color: rgb(105, 92, 113);
+    padding-bottom: 32px;
+}
 
+@media screen and (min-width:600px){
     .header__container{
         justify-content: space-between;
     }
@@ -178,13 +239,5 @@
         position: static;
         background: none;
         width: auto;
-    }
-
-    .section{
-        padding: 0 100px;
-    }
-
-    .footer__inf{
-        padding-bottom: 0;
     }
 }
