@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
 }
 
 .nav__how{
@@ -23,6 +24,11 @@
     width: 100%;
     box-sizing: border-box;
     z-index: 100;
+    color: white;
+}
+
+.nav__how:hover{
+    color: rgb(89, 26, 101);    
 }
 
 .nav__log{
@@ -34,10 +40,15 @@
     border-radius: 10rem; 
     height: 5px;
     width: 80px;
+    color: white;
 }
 
+.nav__bott:hover{
+    background: rgb(235, 164, 0);
+}
+
+
 .nav a{
-    color: white; 
     text-decoration: none;
     padding: 15px;
     display: flex;
@@ -83,19 +94,24 @@
     padding: 16px;
 }
 
+.navegacion a:hover{
+    color: rgb(89, 26, 101);
+}
+
 .container{
     max-width: 1100px;
-    margin: 10px auto;
+    margin: 15px auto;
 
 }
 
 .busqueda{
     position: relative;
     width: 40%;
+    margin-bottom: 15px;
 }
 
 .busqueda input{ 
-    font-weight: 400;
+    font-size: 100%;
     color: rgb(57, 57, 57);
     border-style: none;
     height: 40px;
@@ -109,6 +125,7 @@
     right: 10px;
     top: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .contenido{ 
@@ -122,6 +139,10 @@
     width: 250px;
     margin: 5px auto;
     border-radius: 10px;
+}
+
+.contenido__articulos:hover{
+    box-shadow: 0px 0px 15px -8px rgba(0,0,0,0.75);
 }
 
 .contenido__articulos img{
@@ -160,21 +181,20 @@
     flex-direction: column;
     color: white;
     font-size: 16px;
+    background: rgb(53, 41, 64);
 }
 
 .footer__sup{
     padding: 15px;
-    background: rgb(53, 41, 64); 
-}
-
-.footer section{
-    border-bottom:solid 1px grey;
+     
 }
 
 .footer__sup--a{
     display: flex;
     padding: 32px 16px;
     align-items: center;
+    border-bottom: solid 1px grey;
+    border-top: solid 1px grey;
 }
 
 .footer__sup--a a{
@@ -230,9 +250,15 @@
     padding-bottom: 32px;
 }
 
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
 @media screen and (min-width:600px){
     .header__container{
         justify-content: space-between;
+        margin: 0 auto;
     }
 
     .nav__how{
@@ -240,4 +266,40 @@
         background: none;
         width: auto;
     }
+}
+
+@media screen and (min-width:1000px){
+    .footer__inf{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    
+    .footer__inf p{
+        order: 1;
+        margin: 0;
+    }
+    
+    .footer__inf a{
+        order: 2;
+        margin: 0;
+    }
+    
+    .footer__inf span{
+        order: 3;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .footer__sup{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__sup--a{
+        border-bottom: none;
+        border-top: none;
+    }
+
 }
