@@ -20,8 +20,8 @@
     </header>
     <main>
         <div class="galery">
-            <a href="#"><img class="galery__item" src="../img/img1.png"/></a>
-            <!--<a href="#"><img class="galery__item" src="../img/img2.png"/></a>-->
+            <a href="#"><img src="../img/img1.png"/></a>
+            <!--<a href="#"><img src="../img/img2.png"/></a>-->
         </div>
         <section class="section">
             <nav class="navegacion">
@@ -39,9 +39,17 @@
         </section>
         <div class="container">
             <div class="busqueda">
-                <input placeholder="Search Cranes" name="bus" type="search">
-                <div class="icono">  
-                    <i class="fas fa-search"></i>
+                <div class="busqueda--input">
+                    <input placeholder="Search Cranes" name="bus" type="search">
+                    <div class="icono">  
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="lista">
+                    <select name="select">
+                        <option value="value1">Trending</option> 
+                        <option value="value2">Newly Added</option>
+                    </select>
                 </div>
             </div>    
             <div class="contenido">    
@@ -97,6 +105,58 @@
                         </div>
                     </a>
                 </div>
+                <div class="contenido__articulos">
+                    <a href="#">
+                        <div class="precio">
+                            <i class="fas fa-gem" style="color: purple"></i>
+                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img src="../img/item5.png">
+                        <div class="descripcion">
+                            <p> Cinnamoroll; Tuxedo Plushie </p>
+                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contenido__articulos">
+                    <a href="#">
+                        <div class="precio">
+                            <i class="fas fa-gem" style="color: purple"></i>
+                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img src="../img/item6.png">
+                        <div class="descripcion">
+                            <p> My Melody Kitten Plushie </p>
+                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contenido__articulos">
+                    <a href="#">
+                        <div class="precio">
+                            <i class="fas fa-gem" style="color: purple"></i>
+                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img src="../img/item7.png">
+                        <div class="descripcion">
+                            <p> Pokemon Relax Time XL Plushie Celebi & Manaphy</p>
+                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contenido__articulos">
+                    <a href="#">
+                        <div class="precio">
+                            <i class="fas fa-gem" style="color: purple"></i>
+                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img src="../img/item8.png">
+                        <div class="descripcion">
+                            <p> Hatsune Miku Manga Style Birthday Multicross 2020 Version </p>
+                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
@@ -130,13 +190,17 @@
                 <a href="#"><i class="fab fa-twitter fa-2x" style="color: white;"></i></a>
             </div>
         </div>
-        <div class="footer__inf">          
-            <a href="#"> Terms of Use </a>
-            <a href="#"> Privacy Policy </a>
-            <a href="#"> Patch Notes </a>
-            <span> API version: 7c859f66 </span>
-            <p> Copyright © 2020 TOKYOCATCH™. All Rights Reserved. </p>                 
-        </div>  
+        <div class="footer__inf">
+            <div class="footer__inf--container">  
+                <div class="footer__inf--cont">      
+                    <a href="#"> Terms of Use </a>
+                    <a href="#"> Privacy Policy </a>
+                    <a href="#"> Patch Notes </a>
+                    <span> API version: 7c859f66 </span>
+                </div>  
+                <p> Copyright © 2020 TOKYOCATCH™. All Rights Reserved. </p>                 
+            </div> 
+        </div>
     </footer>
 </body>
 </html> 

@@ -12,8 +12,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .nav__how{
@@ -62,11 +63,11 @@
     align-items: center;
 }
 
-/*.galery{
-    display:flex;
-}*/
+.galery{
+   
+}
 
-.galery__item{
+.galery img{
     width: 100%;
     height: auto;
 }
@@ -101,16 +102,20 @@
 .container{
     max-width: 1100px;
     margin: 15px auto;
-
 }
 
-.busqueda{
+.busqueda{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.busqueda--input{
     position: relative;
     width: 40%;
     margin-bottom: 15px;
 }
 
-.busqueda input{ 
+.busqueda--input input{ 
     font-size: 100%;
     color: rgb(57, 57, 57);
     border-style: none;
@@ -125,6 +130,18 @@
     right: 10px;
     top: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.lista select{
+    width: 168px;
+    padding: 12px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border-style: none;
+    color: rgb(89, 26, 101);
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -186,7 +203,6 @@
 
 .footer__sup{
     padding: 15px;
-     
 }
 
 .footer__sup--a{
@@ -229,9 +245,12 @@
 .footer__inf{
     background: rgb(30, 15, 41);
     color: rgb(166, 155, 172);
+}
+
+.footer__inf--cont{
     display: flex;
     flex-direction: column;
-    padding: 20px 16px 50px 16px;
+    padding: 10px;
 }
 
 .footer__inf a{
@@ -240,9 +259,10 @@
     margin-bottom: 16px;
 }
 
-.footer__inf p{
-    margin-bottom: 16px;
+.footer__inf p{ 
     margin: 0;
+    padding-bottom: 50px;
+    padding-left: 10px;
 }
 
 .footer__inf span{
@@ -256,50 +276,64 @@
 
 
 @media screen and (min-width:600px){
-    .header__container{
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-
     .nav__how{
         position: static;
         background: none;
         width: auto;
     }
+
+    .nav__how{
+        color: rgb(41, 178, 219);
+    }
+
+    .nav__how:hover{
+        color: rgb(255, 177, 0);
+    }
 }
 
 @media screen and (min-width:1000px){
-    .footer__inf{
-        flex-direction: row;
+    .footer__inf--container{ 
+        margin: 0 auto;
+        max-width: 1100px;
+        display: flex;
         justify-content: space-between;
-        padding-bottom: 20px;
     }
-    
-    .footer__inf p{
+
+    .footer__inf--container p{ 
+        padding: 16px 0;
         order: 1;
-        margin: 0;
+    }
+
+    .footer__inf--cont{
+        padding: 16px 0;
+        order: 2;
+    }
+
+    .footer__inf--cont{
+        flex-direction: row;
     }
     
     .footer__inf a{
-        order: 2;
-        margin: 0;
+        margin: 0 0 0 24px;
     }
-    
+
     .footer__inf span{
-        order: 3;
         padding: 0;
-    }
+        margin: 0 0 0 24px;
+    } 
 }
 
 @media screen and (min-width:1200px){
     .footer__sup{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin: 0 auto;  
+        max-width: 1100px;
     }
 
     .footer__sup--a{
         border-bottom: none;
         border-top: none;
-    }
-
+        padding: 0 140px;
+    } 
 }
