@@ -333,6 +333,10 @@
 
 @media screen and (min-width:1200px){
     .footer__sup{
+        padding: 0px;
+    }
+    
+    .footer__sup--container{
         display: flex;
         justify-content: space-between;
         margin: 0 auto;  
@@ -343,10 +347,14 @@
     .footer__sup--a{
         border-bottom: none;
         border-top: none;
-        padding: 0 0 0 100px;
+        padding: 0px;
+        
     } 
 
-    .footer__sup--form{
-        padding: 0 0 0 80px;
+    .footer__sup--cont{
+        display: flex;
+        align-content: space-between;
+        width: 250px;
     }
+
 }
