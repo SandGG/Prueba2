@@ -1,0 +1,154 @@
+@use 'colors';
+@use 'variables';
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    @include variables.background-color (colors.$color-morado-semiOscuro,colors.$color-blanco);
+
+    &__higher {
+        padding: 15px;
+
+        @media (min-width: variables.$breakpoint-big) {
+            padding: 0;
+        }
+    }
+
+    &__img {
+        width: 14rem;
+    }
+
+    &__p {
+        @extend %text-font;
+        
+        &--bot {
+            margin: 0;
+            padding-bottom: 50px;
+            padding-left: 10px;
+
+            @media (min-width: variables.$breakpoint-media){
+                @include variables.footer-order(1);
+            }
+        }
+
+        &--weight{
+            font-weight: 700;
+            font-size: 22px;
+            margin: 0;
+        }
+    }
+
+    &__line {
+        padding: 32px 16px 20px 16px;
+        border-bottom: solid 1px colors.$color-footer-line;
+        border-top: solid 1px colors.$color-footer-line;
+
+        @media (min-width: variables.$breakpoint-big){
+            border-bottom: none;
+            border-top: none;
+            padding: 0px;
+        }
+    }
+
+    &__learn {
+        width: 245px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 102px;
+
+        @media(min-width: variables.$breakpoint-big){
+            display: flex;
+            align-content: space-between;
+            width: 250px;
+        }
+    }
+
+    &__input {
+        padding: 13px;
+        margin: 15px 0;
+        font-size: 100%;
+    }
+
+    &__boton {
+        @include variables.background-color (colors.$color-footer-button,colors.$color-blanco);
+        padding: 17px;
+        margin: 15px 0;
+        border-style: none;
+    }
+
+    &__link {
+        @extend %text-font;
+        color: colors.$color-blanco;
+        text-decoration: none;
+        margin-bottom: 16px;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &--politic{
+            color: colors.$color-footer-a;
+
+            @media (min-width: variables.$breakpoint-media){
+                margin: {
+                    left: 24px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        padding: 0 8px;
+        color: colors.$color-blanco;
+    }
+
+    &__lower {
+        @include variables.background-color (colors.$color-morado-oscuro,colors.$color-footer-a);
+    }
+
+    &__container{
+        @extend %margen;
+
+        @media (min-width: variables.$breakpoint-big){
+            display: flex;
+            justify-content: space-between;
+            padding: 32px 0 10px 0;
+        }
+
+        &--lower{
+            @extend %margen;
+
+            @media (min-width: variables.$breakpoint-media){
+                display: flex;
+                justify-content: space-between;
+            }
+            @media (min-width: variables.$breakpoint-big){
+                padding: 0;
+            }
+        }
+    }
+
+    &__politic{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        @media (min-width: variables.$breakpoint-media){
+            @include variables.footer-order(2);
+            flex-direction: row;
+        }
+    }
+
+    &__span {
+        @extend %text-font;
+        color: colors.$color-span;
+        padding-bottom: 32px;
+
+        @media (min-width: variables.$breakpoint-media) {
+            margin-left: 24px;
+            padding: 0;
+        }
+    }
+}

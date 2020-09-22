@@ -1,0 +1,68 @@
+@use 'colors';
+@use 'variables';
+
+.header {
+    background: colors.$color-morado-primario;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        @extend %margen;
+    }
+}
+.nav { 
+    &--header{
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    &__link {
+        @extend %flex-center-center;
+
+        &--how{
+            position: fixed;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1;
+            @include variables.background-color (colors.$color-morado-claro,colors.$color-blanco);
+            
+            &:hover{
+                color: colors.$color-morado-primario; 
+            }
+
+            @media (min-width: variables.$breakpoint-small) {
+                & {
+                    position: static;
+                    background: none;
+                    width: auto;
+                    color: colors.$color-azul;
+                }
+            
+                &:hover {
+                    color: colors.$color-naranja;
+                }
+            }
+        }
+
+        &--log{
+            color: colors.$color-naranja;
+        }
+
+        &--bott{
+            background: colors.$color-naranja;
+            border-radius: 10rem; 
+            height: 5px;
+            width: 80px;
+            color: colors.$color-blanco;
+
+            &:hover{
+                background: colors.$color-naranja-hover;
+            }
+        }
+    }
+}

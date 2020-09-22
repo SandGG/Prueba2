@@ -7,197 +7,195 @@
     <link href="estilo.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body class="body">
+<body>
     <header class="header">
         <div class="header__container">
-            <a href="#" class="nav__logo"><img  src="img/logo-pag.png"/></a> 
-            <nav class="nav">
-                <a class="nav__how" href="#"><b> HOW TO PLAY? &rarr;</b></a>
-                <a class="nav__log" href="#"><b> LOG IN </b></a>          
-                <a class="nav__bott" href="#"><b> SIGN UP </b></a>          
+            <a href="#"><img src="img/logo-pag.png"/></a> 
+            <nav class="nav nav--header">
+                <a class="nav__link nav__link--how" href="#"><b> HOW TO PLAY? &rarr;</b></a>
+                <a class="nav__link nav__link--log" href="#"><b> LOG IN </b></a>          
+                <a class="nav__link nav__link--bott" href="#"><b> SIGN UP </b></a>          
             </nav> 
         </div>              
     </header>
     <main>
-        <div class="galery">
-            <a href="#"><img src="img/img1.png"/></a>
+        <div class="gallery">
+            <a href="#"><img class="gallery__img" src="img/img1.png"/></a>
         </div>
         <section class="section">
-            <nav class="navegacion">
-                <a href="#"><b> All&nbsp;Cranes </b></a>
-                <a href="#"><b> Figures </b></a>
-                <a href="#"><b> Plushies </b></a>
-                <a href="#"><b> Key&nbsp;Chain </b></a>
-                <a href="#"><b> Stationery </b></a>
-                <a href="#"><b> My&nbsp;Melody:&nbsp;XL&nbsp;Romantic&nbsp;Heart&nbsp;Plushie </b></a>
-                <a href="#"><b> Home&nbsp;Decoration </b></a>
-                <a href="#"><b> Home&nbsp;Appliance </b></a>
-                <a href="#"><b> Miscellaneous&nbsp;Goods </b></a>
-                <a href="#"><b> Kitchen&nbsp;Tools </b></a>
+            <nav class="nav nav--main">
+                <a class="nav__link nav__link--main" href="#"><b> All&nbsp;Cranes</b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Figures </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Plushies </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Key&nbsp;Chain </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Stationery </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> My&nbsp;Melody:&nbsp;XL&nbsp;Romantic&nbsp;Heart&nbsp;Plushie </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Home&nbsp;Decoration </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Home&nbsp;Appliance </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Miscellaneous&nbsp;Goods </b></a>
+                <a class="nav__link nav__link--main" href="#"><b> Kitchen&nbsp;Tools </b></a>
             </nav>
         </section>
-        <div class="container">
-            <div class="busqueda">
-                <div class="busqueda--input">
-                    <input placeholder="Search Cranes" name="bus" type="search">
-                    <div class="icono">  
-                        <i class="fas fa-search"></i>
-                    </div>
+        <div class="main__container">
+            <div class="main__bar">
+                <div class="main__search">
+                    <input class="main__input" placeholder="Search Cranes" name="bus" type="search"> 
+                    <i class="fas fa-search main__icon"></i>
                 </div>
-                <div class="lista">
-                    <select name="select">
+                <div>
+                    <select class="main__select" name="select">
                         <option value="value1">Trending</option> 
                         <option value="value2">Newly Added</option>
                     </select>
                 </div>
             </div>    
-            <div class="contenido">    
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+            <div class="main__article">    
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
                         </div>
-                        <img src="img/item1.png">
-                        <div class="descripcion">
-                            <p> Cinnamoroll; Oh! Ninja Plushie </p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
-                        </div>
-                        <img src="img/item2.png">
-                        <div class="descripcion">
-                            <p> Cinnamoroll; Dreamy Summer Big Plushie </p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        <img class="article__img" src="img/item1.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> Cinnamoroll; Oh! Ninja Plushie </p>
+                            <span class="article__span article__span--green"> Play now! </span>
                         </div>
                     </a>
-                </div>
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+                </article>
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
                         </div>
-                        <img src="img/item3.png">
-                        <div class="descripcion">
-                            <p> My Melody Day Out Plushie </p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
-                        </div>
-                        <img src="img/item4.png">
-                        <div class="descripcion">
-                            <p> Pokemon Pake-Hug XL Plushie </p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        <img class="article__img" src="img/item2.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> Cinnamoroll; Dreamy Summer Big Plushie </p>
+                            <span class="article__span article__span--green"> Play now! </span>
                         </div>
                     </a>
-                </div>
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+                </article>
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
                         </div>
-                        <img src="img/item5.png">
-                        <div class="descripcion">
-                            <p> Cinnamoroll; Tuxedo Plushie </p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
-                        </div>
-                        <img src="img/item6.png">
-                        <div class="descripcion">
-                            <p> My Melody Kitten Plushie </p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        <img class="article__img" src="img/item3.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> My Melody Day Out Plushie </p>
+                            <span class="article__span article__span--green"> Play now! </span>
                         </div>
                     </a>
-                </div>
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
+                </article>
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
                         </div>
-                        <img src="img/item7.png">
-                        <div class="descripcion">
-                            <p> Pokemon Relax Time XL Plushie Celebi & Manaphy</p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="contenido__articulos">
-                    <a href="#">
-                        <div class="precio">
-                            <i class="fas fa-gem" style="color: purple"></i>
-                            <span style="color: purple;"><b> &nbsp;120 </b></span>
-                        </div>
-                        <img src="img/item8.png">
-                        <div class="descripcion">
-                            <p> Hatsune Miku Manga Style Birthday Multicross 2020 Version </p>
-                            <span style="color: rgb(86, 221, 86);"> Play now! </span>
+                        <img class="article__img" src="img/item4.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> Pokemon Pake-Hug XL Plushie </p>
+                            <span class="article__span article__span--green"> Play now! </span>
                         </div>
                     </a>
-                </div>
+                </article>
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img class="article__img" src="img/item5.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> Cinnamoroll; Tuxedo Plushie </p>
+                            <span class="article__span article__span--green"> Play now! </span>
+                        </div>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img class="article__img" src="img/item6.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> My Melody Kitten Plushie </p>
+                            <span class="article__span article__span--green"> Play now! </span>
+                        </div>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img class="article__img" src="img/item7.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> Pokemon Relax Time XL Plushie Celebi & Manaphy </p>
+                            <span class="article__span article__span--green"> Play now! </span>
+                        </div>
+                    </a>
+                </article>    
+                <article class="article">
+                    <a class="article__link" href="#">
+                        <div class="article__price">
+                            <i class="fas fa-gem article__icon"></i>
+                            <span class="article__span article__span--purple"><b> &nbsp;120 </b></span>
+                        </div>
+                        <img class="article__img" src="img/item8.png">
+                        <div class="article__descrip">
+                            <p class="article__p"> Hatsune Miku Manga Style Birthday Multicross 2020 Version </p>
+                            <span class="article__span article__span--green"> Play now! </span>
+                        </div>
+                    </a>
+                </article>          
             </div>
         </div>
     </main>
     <footer class="footer">
-        <div class="footer__sup">
-            <div class="footer__sup--container">
+        <div class="footer__higher">
+            <div class="footer__container">
                 <div>
                     <img class="footer__img" src="img/pie.png"/>
-                    <p><b> Win. Anytime. Anywhere. </b></p>
+                    <p class="footer__p"><b> Win. Anytime. Anywhere. </b></p>
                     <a href="#"><img src="img/app.png"/></a>
                 </div>
-                <div class="footer__sup--a">
-                    <div class="footer__sup--cont">
-                        <a href="#"> About </a>
-                        <a ref="#"> How it Works </a>
-                        <a href="#"> Crane List </a>
-                        <a href="#"> FAQ </a>
-                        <a href="#"> User Guide </a>
-                        <a href="#"> Contact Us </a>
+                <div class="footer__line">
+                    <div class="footer__learn">
+                        <a class="footer__link" href="#"> About </a>
+                        <a class="footer__link" href="#"> How it Works </a>
+                        <a class="footer__link" href="#"> Crane List </a>
+                        <a class="footer__link" href="#"> FAQ </a>
+                        <a class="footer__link" href="#"> User Guide </a>
+                        <a class="footer__link" href="#"> Contact Us </a>
                     </div>    
                 </div>
-                <div class="footer__sup--form">
-                    <p> Stay Connected! </p>
+                <div class="footer__form">
+                    <p class="footer__p footer__p--weight"> Stay Connected! </p>
                     <form action="#" method="get">
-                        <input class="input" placeholder="Email Addres" name="buscar" type="search" 
-                        ><input class="boton"  type="submit" value="&rarr;">
+                        <input class="footer__input" placeholder="Email Addres" name="buscar" type="search" 
+                        ><input class="footer__boton"  type="submit" value="&rarr;">
                     </form>
-                    <a href="#"><i class="fab fa-instagram fa-2x" style="color: white;"></i></a>
-                    <a href="#"><i class="fab fa-facebook-square fa-2x" style="color: white;"></i></a>
-                    <a href="#"><i class="fab fa-twitter fa-2x" style="color: white;"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x footer__icon"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square fa-2x footer__icon"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x footer__icon"></i></a>
                 </div>
             </div>
         </div>
-        <div class="footer__inf">
-            <div class="footer__inf--container">  
-                <div class="footer__inf--cont">      
-                    <a href="#"> Terms of Use </a>
-                    <a href="#"> Privacy Policy </a>
-                    <a href="#"> Patch Notes </a>
-                    <span> API version: 7c859f66 </span>
+        <div class="footer__lower">
+            <div class="footer__container footer__container--lower">  
+                <div class="footer__politic">      
+                    <a class="footer__link footer__link--politic" href="#"> Terms of Use </a>
+                    <a class="footer__link footer__link--politic" href="#"> Privacy Policy </a>
+                    <a class="footer__link footer__link--politic" href="#"> Patch Notes </a>
+                    <span class="footer__span"> API version: 7c859f66 </span>
                 </div>  
-                <p> Copyright © 2020 TOKYOCATCH™. All Rights Reserved. </p>                 
+                <p class="footer__p footer__p--bot"> Copyright © 2020 TOKYOCATCH™. All Rights Reserved. </p>                 
             </div> 
         </div>
     </footer>

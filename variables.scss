@@ -1,0 +1,38 @@
+$breakpoint-small: 600px;
+$breakpoint-media: 1000px;
+$breakpoint-big: 1200px;
+
+%margen {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+%flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%text-font {
+    font-family: Helvetica;
+    font-size: 16px; 
+}
+.nav {
+    display: flex;
+}
+
+.nav__link {
+    @extend %text-font;
+    text-decoration: none;
+    padding: 15px;
+}
+
+@mixin footer-order ($order) {
+    order: $order;
+    padding: 16px 0;
+}
+
+@mixin background-color ($background, $color) {
+    background: $background;
+    color: $color;
+}

@@ -1,0 +1,9 @@
+@use 'colors';
+@use 'header';
+@use 'main';
+@use 'footer';
+
+body{
+    margin: 0px;
+    background-color: colors.$color-fondo;
+}
